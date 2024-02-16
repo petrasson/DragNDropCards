@@ -1,0 +1,121 @@
+body {
+  background: salmon;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+
+.dropzone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 660px;
+  width: 500px;
+  border: 3px rgb(193, 98, 98) solid;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.card {
+  padding: 10px;
+  height: 400px;
+  width: 250px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  cursor: move;
+  position: absolute;
+}
+
+/*
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+
+.dropzone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 660px;
+  width: 500px;
+  border: 3px rgb(193, 98, 98) solid;
+  border-radius: 30px;
+  background-color: white;
+}
+*/
+.card {
+  height: 400px;
+  width: 250px;
+  margin: -15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/*
+#card1 {
+  top: 60px;
+  background-color: rgb(254, 156, 145);
+  border: 3px red solid;
+}
+
+#card2 {
+  top: 90px;
+  background-color: rgb(249, 176, 168);
+  border: 3px #332222 solid;
+}
+
+#card3 {
+  top: 120px;
+  background-color: rgb(251, 217, 213);
+  border: 3px rgb(68, 175, 158) solid;
+}
+
+#card4 {
+  top: 150px;
+  background-color: rgb(252, 232, 229);
+  border: 3px rgb(61, 108, 100) solid;
+}
+
+#card5 {
+  top: 120px;
+  background-color: rgb(252, 232, 229);
+  border: 3px rgb(61, 108, 100) solid;
+}
+
+#card6 {
+  top: 90px;
+  background-color: rgb(252, 232, 229);
+  border: 3px rgb(61, 108, 100) solid;
+}
+
+#card7 {
+  top: 60px;
+  background-color: rgb(252, 232, 229);
+  border: 3px rgb(61, 108, 100) solid;
+}
+*/
+
+.hold {
+  border: 4px lightgrey solid;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}

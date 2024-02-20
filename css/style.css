@@ -20,18 +20,31 @@ body {
   width: 500px;
   border: 3px rgb(193, 98, 98) solid;
   border-radius: 30px;
-  background-color: white;
+  background-color: rgb(246, 244, 244);
+  margin: 150px 30px 0px;
+
+  padding-top: 80px;
 }
 
 .card {
   padding: 10px;
-  height: 400px;
+  height: 115px;
   width: 250px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 15px;
   cursor: move;
-  position: absolute;
+  /*  position: absolute; */
+  margin: -60px;
+}
+
+.button {
+  padding: 15px;
+  width: 190px;
+  border-radius: 5px;
+  border: 1px solid #d18080;
+  background-color: white;
+  margin: 20px;
 }
 
 /*
@@ -55,15 +68,8 @@ body {
   border-radius: 30px;
   background-color: white;
 }
-*/
-.card {
-  height: 400px;
-  width: 250px;
-  margin: -15px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-/*
+
+
 #card1 {
   top: 60px;
   background-color: rgb(254, 156, 145);

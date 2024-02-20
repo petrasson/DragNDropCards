@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  let dragged;
+  let button = document.querySelector(".button");
+  button.addEventListener("click", createCard);
 
+  function createCard() {
+    const newCard = document.createElement("div");
+    newCard.classList.add("card");
+    document.getElementById("dropzone1").appendChild(newCard);
+  }
+
+  let dragged;
   document.querySelectorAll(".dropzone").forEach((dropzone) => {
     dropzone.addEventListener("dragover", (e) => {
       e.preventDefault();
@@ -113,7 +121,6 @@ function dragDrop(e) {
 
 
 
-//https://www.youtube.com/watch?v=C22hQKE_32c  gammal
 
 const container = document.querySelector(".container");
 const dropZones = document.querySelectorAll(".drop-zone");

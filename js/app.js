@@ -1,15 +1,29 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   let button = document.querySelector(".button");
-  button.addEventListener("click", createCard);
+  const dropzones = document.querySelectorAll(".dropzone");
+  let totCard = document.querySelectorAll(".card").length; //number cards
+  console.log("totCard", totCard);
 
-  function createCard() {
+  button.addEventListener("click", () => {
+    const dropzone = dropzones[0];
+    createCard(dropzone);
+  });
+
+  function createCard(dropzone) {
     const newCard = document.createElement("div");
     newCard.classList.add("card");
-    document.getElementById("dropzone1").appendChild(newCard);
+    newCard.setAttribute("draggable", true);
+    const cards = dropzone.querySelectorAll(".card");
+    const newIndex = cards.length + 1;
+    newCard.textContent = "Card " + newIndex;
+    dropzone.appendChild(newCard);
+    totCard++;
+    console.log(totCard);
+    //updateDraggableCards();
   }
 
   let dragged;
-  document.querySelectorAll(".dropzone").forEach((dropzone) => {
+  dropzones.forEach((dropzone) => {
     dropzone.addEventListener("dragover", (e) => {
       e.preventDefault();
       e.dataTransfer.dropEffect = "move";
@@ -17,7 +31,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     dropzone.addEventListener("drop", (e) => {
       e.preventDefault();
-      // Find the closest ancestor which is a dropzone, or the target itself if it's a dropzone
       let targetDropzone = e.target.closest(".dropzone");
       if (targetDropzone) {
         targetDropzone.appendChild(dragged);

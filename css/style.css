@@ -22,7 +22,6 @@ body {
   border-radius: 30px;
   background-color: rgb(246, 244, 244);
   margin: 150px 30px 0px;
-
   padding-top: 80px;
 }
 
@@ -70,48 +69,6 @@ body {
 }
 
 
-#card1 {
-  top: 60px;
-  background-color: rgb(254, 156, 145);
-  border: 3px red solid;
-}
-
-#card2 {
-  top: 90px;
-  background-color: rgb(249, 176, 168);
-  border: 3px #332222 solid;
-}
-
-#card3 {
-  top: 120px;
-  background-color: rgb(251, 217, 213);
-  border: 3px rgb(68, 175, 158) solid;
-}
-
-#card4 {
-  top: 150px;
-  background-color: rgb(252, 232, 229);
-  border: 3px rgb(61, 108, 100) solid;
-}
-
-#card5 {
-  top: 120px;
-  background-color: rgb(252, 232, 229);
-  border: 3px rgb(61, 108, 100) solid;
-}
-
-#card6 {
-  top: 90px;
-  background-color: rgb(252, 232, 229);
-  border: 3px rgb(61, 108, 100) solid;
-}
-
-#card7 {
-  top: 60px;
-  background-color: rgb(252, 232, 229);
-  border: 3px rgb(61, 108, 100) solid;
-}
-*/
 
 .hold {
   border: 4px lightgrey solid;

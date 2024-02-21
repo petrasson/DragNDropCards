@@ -1,38 +1,25 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag and Drop Cards</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <button class = "button">Create card</button>
-        <div id="dropzone1" class="dropzone">
-            <div id= "card1" class="card" draggable="false">Card 1
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->
-            </div>
-            <div id= "card2" class="card" draggable="false">Card 2
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->            
-            </div>
-            <div id= "card3" class="card" draggable="false">Card 3
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->            
-            </div>
-            <div id= "card4" class="card" draggable="true">Card 4
-                <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->            
-            </div>
-        </div>
-        <div id="dropzone2" class="dropzone">
-            <div id= "card7" class="card" draggable="false">Card 7
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->
-            </div>
-            <div id= "card6" class="card" draggable="false">Card 6
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->
-            </div>
-            <div id= "card5" class="card" draggable="true">Card 5
-            <!--<img src="http://source.unsplash.com/random/150x150" alt ="random image"> -->            
-            </div>
-        </div>  
-<script src="js/app.js"></script>
-</body>
+      <button class="button">Create card</button>
+      <div id="dropzone1" class="dropzone">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+        <div class="card" draggable="true">Card 7</div>
+      </div>
+
+      <div id="dropzone2" class="dropzone"></div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
 </html>
